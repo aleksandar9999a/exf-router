@@ -38,6 +38,6 @@ export class Router extends Component {
             }
         }
         
-        return <div>Route is not found</div>;
+        return <div></div>;
     }
 }
