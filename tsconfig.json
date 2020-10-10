@@ -1,0 +1,29 @@
+{
+	"compilerOptions": {
+		"target": "ES5",
+		"module": "esnext",
+		"outDir": "./lib",
+		"lib": [
+			"esnext",
+			"dom"
+		],
+		"jsx": "react",
+		"jsxFactory": "ExF",
+		"declaration": true,
+		"sourceMap": true,
+		"downlevelIteration": true,
+		"strict": true,
+		"moduleResolution": "node",
+		"esModuleInterop": true,
+		"experimentalDecorators": true,
+		"emitDecoratorMetadata": true,
+		"forceConsistentCasingInFileNames": true
+	},
+	"include": [
+		"packages"
+	],
+	"exclude": [
+		"node_modules",
+		"**/*.spec.ts"
+	]
+}
