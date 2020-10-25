@@ -9,7 +9,9 @@ export class Router extends Component {
     @Prop('state') routes: IRoute[] = [];
     @Prop('state') guard?: () => boolean;
 
-    onCreate() {
+    constructor() {
+        super();
+
         window.addEventListener('popstate', this.handleChange);
         window.addEventListener('hashchange', this.handleChange);
         window.addEventListener('locationchange', this.handleChange);

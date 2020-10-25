@@ -5,3 +5,10 @@ export {
     Router,
     RouterLink
 }
+
+export const RouterModule = {
+    components: [
+        Router,
+        RouterLink
+    ]
+}
