@@ -36,7 +36,7 @@ export class Router extends Component {
             const matched = matchFn(pathname);
 
             if (matched) {
-                return { tag: currRoute.component, props: matched.params, children: [] };
+                return { tag: 'div', props: matched.params, children: [{ tag: currRoute.component, props: matched.params, children: [] }] };
             }
         }
         
